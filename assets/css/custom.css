@@ -1,0 +1,8 @@
+.grad {
+    background: rgb(10,37,51);
+    background: linear-gradient(90deg, rgba(10,37,51,1) 0%, rgba(0,78,110,1) 100%);
+}
+
+.color-custom {
+    background-color: #292e33;
+}
