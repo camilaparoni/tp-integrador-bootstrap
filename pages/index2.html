@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    </head>
+
+<body data-bs-spy="scroll" data-bs-smooth-scroll="true">
+
+ <!--Nav bar-->  
+<header>
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark color-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../img/codoacodo.png" alt="codoacodo" width="120">Conf Bs As
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex justify-content-end">
+          <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+          <a class="nav-link" href="#oradores">Los oradores</a>
+          <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+          <a class="nav-link" href="#formulario">Conviértete en orador</a>
+          <a class="nav-link text-success" href="#">Comprar Tickets</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+ </header>   
+ 
+
+ <!--Form-->
+  <section class="d-flex flex-column col-6 mx-auto pt-5">
+    <div class="pt-5 mt-4" id="formulario">
+        <p class="text-center">VENTA</p>
+        <h2 class="text-center mb-3">VALOR DEL TICKET $200</h2> 
+    <form>
+      <div class="d-flex flex-row mb-3">
+        <input type="nombre" class="form-control me-2" id="nombre" placeholder="Nombre">
+        <input type="apellido" class="form-control" id="apellido" placeholder="Apellido">
+      </div>
+      <div class="d-flex flex-row mb-3">
+        <input type="correo" class="form-control" id="correo" placeholder="Correo">
+      </div>
+      <div class="d-flex flex-row mb-3">
+        <div class="form-group col-6 me-2">
+          <label for="inputCantidad">Cantidad</label>
+          <input type="cantidad" class="form-control" id="inputCantidad" placeholder="Cantidad">
+        </div>
+        <div class="form-group col">
+          <label for="inputCategoria">Categoría</label>
+          <select id="inputState" class="form-select">
+            <option selected>Categoría</option>
+            <option>Estudiante</option>
+            <option>Trainee</option>
+            <option>Junior</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex flex-row mb-3">
+        <input type="total" class="form-control" id="total" placeholder="Total a Pagar: $">
+      </div>
+      <div class="d-flex flex-row mb-3">
+      <button type="submit" class="btn btn-success col-6 me-2">Borrar</button>
+      <button type="submit" class="btn btn-success col">Resumen</button>
+    </div>
+    </form>
+  </section>
+
+<!--Footer-->
+<footer>
+    <div class="container-fluid fixed-bottom">
+    <div class="row mt-5 p-3 text-center align-items-center grad">
+      <div class="col">
+        <a class="nav-link text-light" href="https://inscripcionesagencia.bue.edu.ar/codoacodo/preguntasfrecuentes">Preguntas<br>frecuentes</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="https://agenciadeaprendizaje.bue.edu.ar/contacto/">Contáctanos</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="#">Prensa</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="#">Conferencias</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="#">Términos y<br>condiciones</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="#">Privacidad</a>
+      </div>
+      <div class="col">
+        <a class="nav-link text-light" href="#">Estudiantes</a>
+      </div>
+    </div>
+</div>
+  </footer>
+  
+</body>
+<script src="../js/bootstrap.min.js"></script>
+</html>
