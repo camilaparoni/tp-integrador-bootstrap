@@ -6,3 +6,8 @@
 .color-custom {
     background-color: #292e33;
 }
+
+.mensaje-error{
+    color: red;
+    font-size: x-small;
+} 
