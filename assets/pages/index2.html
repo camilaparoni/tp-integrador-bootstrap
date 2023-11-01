@@ -23,10 +23,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex justify-content-end">
-            <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
-            <a class="nav-link" href="#">Los oradores</a>
-            <a class="nav-link" href="#lugar">El lugar y la fecha</a>
-            <a class="nav-link" href="#formulario">Conviértete en orador</a>
+            <a class="nav-link active" aria-current="page" href="/index.html#conferencia">La conferencia</a>
+            <a class="nav-link" href="/index.html#oradores">Los oradores</a>
+            <a class="nav-link" href="/index.html#lugar">El lugar y la fecha</a>
+            <a class="nav-link" href="/index.html#formulario">Conviértete en orador</a>
             <a class="nav-link text-success" href="#">Comprar Tickets</a>
           </div>
         </div>
@@ -71,7 +71,10 @@
         </div>
         <div class="d-flex flex-row mb-3">
           <button type="reset" class="btn btn-success col-6 me-2">Borrar</button>
-          <button id="resumen" type="button" class="btn btn-success col">Resumen</button>
+          <button id="resumen" type="button" class="btn btn-success col" onclick="validarResumen(event)">Resumen</button> 
+        </div>
+        <div class="d-flex flex-row mb-3">
+          <span id="mensajeErrorResumen" class="mensaje-error"></span>
         </div>
       </form>
 

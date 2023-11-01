@@ -50,7 +50,19 @@ function validarEmail(event) {
     }
   }
 
-
+function validarResumen (event) {
+  var nombre = document.getElementById("nombre").value;
+  var apellido = document.getElementById('apellido').value;
+  var email = document.getElementById('correo').value;
+  var resumen = document.getElementById('resumen');
+  var cantidad = document.getElementById('inputCantidad')
+  var categoria = document.getElementById("inputState")
+  var mensajeErrorResumen = document.getElementById('mensajeErrorResumen')
+  if (nombre === "" || apellido === "" || email === "" || cantidad === "" || categoria === "") {
+    mensajeErrorResumen.innerHTML = "No puede haber campos vacíos, verifique.";
+    event.preventDefault(); // Evitar el comportamiento por defecto (envío del formulario)
+  }
+}
 
 function borrarMensajeError() {
   var mensajeError = document.getElementById("mensajeError");
